@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Melina Huaman Huaraca</title>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Fredoka+One&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    background: linear-gradient(120deg, #ff9a8b, #ff6a88, #b06ab3);
+    background-size: 400% 400%;
+    animation: bgAnimation 15s ease infinite;
+    color: #fff;
+  }
+
+  @keyframes bgAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  header {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  h1 {
+    font-family: "Fredoka One", cursive;
+    font-size: 3.5rem;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    animation: shineText 4s linear infinite;
+  }
+
+  @keyframes shineText {
+    0% { text-shadow: 0 0 5px #fff; }
+    50% { text-shadow: 0 0 25px #fffd7f, 0 0 50px #ff6a88; }
+    100% { text-shadow: 0 0 5px #fff; }
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    color: #ffe066;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: subtitleAppear 1.5s forwards;
+  }
+
+  @keyframes subtitleAppear {
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    margin: 1.5rem 0;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.2);
+    transition: all 0.3s ease;
+    display: inline-block;
+    animation: linkBounce 2s infinite alternate;
+  }
+
+  nav a:hover {
+    background: #ffe066;
+    color: #000;
+    transform: scale(1.1) rotate(-2deg);
+  }
+
+  @keyframes linkBounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-4px); }
+  }
+
+  main {
+    max-width: 900px;
+    margin: auto;
+    background: rgba(0,0,0,0.2);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  }
+
+  p {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: paragraphFade 2s forwards;
+  }
+
+  p:nth-of-type(1) { animation-delay: 0.5s; }
+  p:nth-of-type(2) { animation-delay: 1s; }
+  p:nth-of-type(3) { animation-delay: 1.5s; }
+  p:nth-of-type(4) { animation-delay: 2s; }
+  p:nth-of-type(5) { animation-delay: 2.5s; }
+  p:nth-of-type(6) { animation-delay: 3s; }
+  p:nth-of-type(7) { animation-delay: 3.5s; }
+  p:nth-of-type(8) { animation-delay: 4s; }
+
+  @keyframes paragraphFade {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  article {
+    background: rgba(255,255,255,0.1);
+    border-left: 4px solid #ffe066;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+    transition: 0.3s;
+  }
+
+  article:hover {
+    transform: translateY(-3px);
+    background: rgba(255,255,255,0.2);
+  }
+
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    background: rgba(0,0,0,0.3);
+    border-top: 2px solid #ffe066;
+  }
+
+  footer a {
+    color: #ffe066;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+</style>
+</head>
+<body>
+  <header>
+    <h1>Melina Huaman Huaraca</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Maquetación</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="pagina1.html">Página 1</a></li>
+        <li><a href="pagina2.html">Página 2</a></li>
+        <li><a href="pagina3.html">Página 3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo sequi tempora blanditiis. Incidunt est minima voluptas. Laudantium, laborum laboriosam!</p>
+      <p>Beatae placeat eos explicabo assumenda, sequi autem voluptates magnam alias earum quia et, nemo, odio adipisci? Quas, tempore sapiente?</p>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <article>
+        <p>Lorem, ipsum.</p>
+        <p>Aliquid, minima!</p>
+      </article>
+      <article>
+        <p>Lorem, ipsum.</p>
+        <p>Perspiciatis, ex!</p>
+      </article>
+      <article>
+        <p>Lorem, ipsum.</p>
+        <p>Molestiae, nesciunt.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <h2>Contacto</h2>
+    <p>Puedes escribirme a: <a href="mailto:2411010087@undc.edu.pe">2411010087@undc.edu.pe</a></p>
+    <p>&copy; 2025 Melina Huaman Huaraca</p>
+  </footer>
+</body>
+</html>
