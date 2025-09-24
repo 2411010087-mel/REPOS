@@ -1,0 +1,83 @@
+body {
+  font: 400 1em/1.5 "Raleway", sans-serif;
+  background: #090d00;
+  color: rgba(255,255,255,.8);
+  margin: 0;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  text-align: center;
+  padding: 30px 15px;
+}
+
+/* TÍTULO PRINCIPAL */
+.titulo-principal {
+  font-family: "Pacifico", cursive;
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  -webkit-animation: moveBg 50s linear infinite;
+  text-shadow: 0 0 25px rgba(0,255,200,.5);
+}
+
+/* NAV */
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #00c3ff;
+}
+
+/* ---------- SECCIONES ---------- */
+main, footer {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+}
+
+/* SUBTÍTULOS */
+.animated-subtitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 20px;
+
+  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  -webkit-animation: moveBg 30s linear infinite;
+  text-shadow: 0 0 15px rgba(0,200,255,.4);
+}
+
+/* EFECTO BACKGROUND ANIMADO */
+@-webkit-keyframes moveBg {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}

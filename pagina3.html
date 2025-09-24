@@ -3,178 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio Neón - Maria Melina Huaman Huaraca</title>
-  <style>
-    /* Fondo con efecto galaxia animada */
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: radial-gradient(circle at 20% 20%, #0f0c29, #302b63, #24243e);
-      overflow-x: hidden;
-      color: #fff;
-      position: relative;
-    }
-
-    /* Estrellas */
-    body::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background: transparent url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
-      animation: stars 60s linear infinite;
-      opacity: 0.5;
-    }
-
-    @keyframes stars {
-      from { background-position: 0 0; }
-      to { background-position: 10000px 10000px; }
-    }
-
-    header {
-      padding: 3rem 1rem;
-      text-align: center;
-      position: relative;
-      z-index: 1;
-    }
-
-    /* Título estilo cartel neón */
-    h1 {
-      font-size: 4rem;
-      font-weight: bold;
-      margin: 0;
-      text-transform: uppercase;
-      color: #fff;
-      text-shadow:
-        0 0 5px #ff00de,
-        0 0 15px #ff00de,
-        0 0 30px #ff00de,
-        0 0 60px #00e6ff,
-        0 0 120px #00e6ff;
-      animation: flicker 2s infinite alternate;
-    }
-
-    @keyframes flicker {
-      0% { opacity: 1; }
-      45% { opacity: 0.9; }
-      50% { opacity: 0.4; }
-      55% { opacity: 0.95; }
-      100% { opacity: 1; }
-    }
-
-    /* Subtítulos brillantes */
-    h2 {
-      font-size: 2.4rem;
-      text-align: center;
-      margin-top: 2rem;
-      color: #fff;
-      text-shadow:
-        0 0 5px #00e6ff,
-        0 0 10px #00e6ff,
-        0 0 20px #ff00de;
-      animation: glow 3s infinite alternate;
-    }
-
-    @keyframes glow {
-      from { text-shadow: 0 0 5px #00e6ff, 0 0 15px #ff00de; }
-      to { text-shadow: 0 0 20px #00e6ff, 0 0 40px #ff00de; }
-    }
-
-    p {
-      font-size: 1.1rem;
-      max-width: 800px;
-      margin: 1rem auto;
-      line-height: 1.7;
-      text-align: center;
-    }
-
-    /* Menú de navegación */
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin: 2rem 0 0;
-      padding: 0;
-    }
-
-    nav a {
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.2rem;
-      color: #fff;
-      position: relative;
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      transition: 0.3s;
-      text-shadow: 0 0 5px #ff00de, 0 0 10px #00e6ff;
-    }
-
-    nav a:hover {
-      background: rgba(255, 255, 255, 0.1);
-      color: #ffcc70;
-      text-shadow:
-        0 0 15px #ff00de,
-        0 0 25px #00e6ff,
-        0 0 50px #ff00de;
-    }
-
-    /* Contenido */
-    main {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 2rem;
-      position: relative;
-      z-index: 1;
-    }
-
-    article {
-      background: rgba(255, 255, 255, 0.05);
-      padding: 1.5rem;
-      margin: 1.5rem 0;
-      border: 2px solid #ff00de;
-      border-radius: 15px;
-      box-shadow:
-        0 0 10px #ff00de,
-        0 0 20px #00e6ff;
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    article:hover {
-      transform: scale(1.05);
-      box-shadow:
-        0 0 20px #ff00de,
-        0 0 40px #00e6ff,
-        0 0 80px #ff00de;
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: rgba(0, 0, 0, 0.6);
-      color: #fff;
-      border-top: 2px solid #00e6ff;
-      text-shadow:
-        0 0 10px #00e6ff,
-        0 0 20px #ff00de;
-      position: relative;
-      z-index: 1;
-    }
-
-    footer a {
-      color: #ffcc70;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-shadow: 0 0 10px #ff00de, 0 0 20px #00e6ff;
-    }
-  </style>
+  <title>Melina Huaman Huaraca</title>
+  <link rel="stylesheet" href="estilo3.css">
 </head>
 <body>
   <header>
-    <h1>Maria Melina Huaman Huaraca</h1>
+    <h1>Melina Huaman Huaraca</h1>
     <nav>
       <ul>
         <li><a href="index.html">Maquetación</a></li>
@@ -183,8 +17,8 @@
         <li><a href="#contacto">Contacto</a></li>
         <li><a href="pagina1.html">Página 1</a></li>
         <li><a href="pagina2.html">Página 2</a></li>
-        <li><a href="pagina3.html">Página 3</a></li>
         <li><a href="pagina4.html">Página 4</a></li>
+        <li><a href="pagina5.html">Página 5</a></li>
       </ul>
     </nav>
   </header>
@@ -192,20 +26,23 @@
   <main>
     <section id="sobre-mi">
       <h2>Sobre mí</h2>
-      <p>Soy Maria Melina Huaman Huaraca, apasionada por la creatividad, el diseño y la innovación.</p>
-      <p>Este portafolio refleja mi estilo, mis proyectos y mi dedicación en cada detalle 💡.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo sequi tempora blanditiis. Incidunt est minima voluptas. Laudantium, laborum laboriosam!</p>
+      <p>Beatae placeat eos explicabo assumenda, sequi autem voluptates magnam alias earum quia et, nemo, odio adipisci? Quas, tempore sapiente?</p>
     </section>
 
     <section id="proyectos">
-      <h2>🚀 Proyectos</h2>
+      <h2>Proyectos</h2>
       <article>
-        <p><b>Proyecto 1:</b> Diseño interactivo con efectos neón.</p>
+        <p>Lorem, ipsum.</p>
+        <p>Aliquid, minima!</p>
       </article>
       <article>
-        <p><b>Proyecto 2:</b> Portafolio artístico con luces brillantes.</p>
+        <p>Lorem, ipsum.</p>
+        <p>Perspiciatis, ex!</p>
       </article>
       <article>
-        <p><b>Proyecto 3:</b> Desarrollo web inmersivo estilo futurista.</p>
+        <p>Lorem, ipsum.</p>
+        <p>Molestiae, nesciunt.</p>
       </article>
     </section>
   </main>

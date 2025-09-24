@@ -1,184 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Melina Huaman Huaraca</title>
-  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: "Quicksand", sans-serif;
-      background: linear-gradient(to right, #ffe5ec, #ffe8f0, #fff5f8);
-      color: #444;
-    }
-
-    header {
-      text-align: center;
-      padding: 2rem;
-    }
-
-    h1 {
-      font-family: "Parisienne", cursive;
-      font-size: 3.2rem;
-      color: #d63384;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 3px solid #d63384;
-      width: 0;
-      animation: typing 3s steps(30) forwards, blink 0.7s infinite;
-    }
-
-    @keyframes typing {
-      from { width: 0; }
-      to { width: 100%; }
-    }
-
-    @keyframes blink {
-      50% { border-color: transparent; }
-    }
-
-    h2 {
-      font-size: 1.8rem;
-      color: #c9184a;
-      border-bottom: 2px dashed #f783ac;
-      display: inline-block;
-      padding-bottom: 0.3rem;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeUp 1.5s forwards;
-    }
-
-    @keyframes fadeUp {
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-      padding: 0;
-      margin: 1rem 0 2rem;
-    }
-
-    nav a {
-      color: #fff;
-      background: #ff80ab;
-      padding: 0.6rem 1.2rem;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
-
-    nav a:hover {
-      background: #ff4d6d;
-      transform: scale(1.05);
-    }
-
-    main {
-      max-width: 900px;
-      margin: auto;
-      background: #fff0f6;
-      padding: 2rem;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    }
-
-    p {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: slideIn 2s ease forwards;
-    }
-
-    p:nth-of-type(1) { animation-delay: 0.5s; }
-    p:nth-of-type(2) { animation-delay: 1s; }
-    p:nth-of-type(3) { animation-delay: 1.5s; }
-    p:nth-of-type(4) { animation-delay: 2s; }
-    p:nth-of-type(5) { animation-delay: 2.5s; }
-    p:nth-of-type(6) { animation-delay: 3s; }
-    p:nth-of-type(7) { animation-delay: 3.5s; }
-    p:nth-of-type(8) { animation-delay: 4s; }
-
-    @keyframes slideIn {
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    article {
-      background: #ffe6eb;
-      border-left: 4px solid #ff4d6d;
-      padding: 1rem;
-      margin: 1rem 0;
-      border-radius: 12px;
-      transition: 0.3s;
-    }
-
-    article:hover {
-      transform: translateY(-3px);
-      background: #ffd6e0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      margin-top: 2rem;
-      background: #ffccd5;
-      border-top: 2px solid #f783ac;
-    }
-
-    footer a { color: #c9184a; font-weight: bold; text-decoration: none; }
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melina Huaman Huaraca</title>
+    <link rel="stylesheet" href="estilo4.css">
 </head>
 <body>
-  <header>
-    <h1>Melina Huaman Huaraca</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Maquetación</a></li>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="pagina1.html">Página 1</a></li>
-        <li><a href="pagina2.html">Página 2</a></li>
-        <li><a href="pagina3.html">Página 3</a></li>
-        <li><a href="pagina4.html">Página 4</a></li>
-        <li><a href="pagina5.html">Página 5</a></li>
-        <li><a href="pagina6.html">Página 6</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- EFECTO 3D -->
+    <div class="stage">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+    </div>
 
-  <main>
-    <section id="sobre-mi">
-      <h2>Sobre mí</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo sequi tempora blanditiis. Incidunt est minima voluptas. Laudantium, laborum laboriosam!</p>
-      <p>Beatae placeat eos explicabo assumenda, sequi autem voluptates magnam alias earum quia et, nemo, odio adipisci? Quas, tempore sapiente?</p>
-    </section>
+    <!-- MENÚ -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Maquetación</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="pagina1.html">Página 1</a></li>
+                <li><a href="pagina2.html">Página 2</a></li>
+                <li><a href="pagina3.html">Página 3</a></li>
+                <li><a href="pagina5.html">Página 5</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="proyectos">
-      <h2>Proyectos</h2>
-      <article>
-        <p>Lorem, ipsum.</p>
-        <p>Aliquid, minima!</p>
-      </article>
-      <article>
-        <p>Lorem, ipsum.</p>
-        <p>Perspiciatis, ex!</p>
-      </article>
-      <article>
-        <p>Lorem, ipsum.</p>
-        <p>Molestiae, nesciunt.</p>
-      </article>
-    </section>
-  </main>
+    <!-- CONTENIDO -->
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo sequi tempora blanditiis. Incidunt est minima voluptas. Laudantium, laborum laboriosam!</p>
+            <p>Beatae placeat eos explicabo assumenda, sequi autem voluptates magnam alias earum quia et, nemo, odio adipisci? Quas, tempore sapiente?</p>
+        </section>
 
-  <footer id="contacto">
-    <h2>Contacto</h2>
-    <p>Puedes escribirme a: <a href="mailto:2411010087@undc.edu.pe">2411010087@undc.edu.pe</a></p>
-    <p>&copy; 2025 Melina Huaman Huaraca</p>
-  </footer>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <article>
+                <p>Lorem, ipsum.</p>
+                <p>Aliquid, minima!</p>
+            </article>
+            <article>
+                <p>Lorem, ipsum.</p>
+                <p>Perspiciatis, ex!</p>
+            </article>
+            <article>
+                <p>Lorem, ipsum.</p>
+                <p>Molestiae, nesciunt.</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contacto">
+        <h2>Contacto</h2>
+        <p>Puedes escribirme a: <a href="mailto:2411010087@undc.edu.pe">2411010087@undc.edu.pe</a></p>
+        <p>&copy; 2025 Melina Huaman Huaraca</p>
+    </footer>
 </body>
 </html>
