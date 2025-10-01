@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cinnamoroll • Inicio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- AOS + Animate.css + Swiper CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Local styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-b from-pink-50 via-white to-purple-50 text-gray-800 antialiased">
+
+  <!-- Header -->
+  <header class="site-header sticky top-0 z-50">
+    <div class="container-wide flex items-center justify-between py-4 px-4">
+      <div class="flex items-center gap-4">
+        <img src="img/2.jpg" alt="logo" class="w-12 h-12 rounded-lg object-cover shadow-md" />
+        <div>
+          <h1 class="text-2xl text-white font-[Fredoka One]">Cinnamoroll</h1>
+          <div class="text-xs text-white/90">Fanpage kawaii ✨</div>
+        </div>
+      </div>
+
+      <nav class="flex items-center gap-6">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="historia.html" class="nav-link">Historia</a>
+        <a href="galeria.html" class="nav-link">Galería</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+        <a href="#!" class="kawaii-badge">¡CUTE!</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden py-20">
+    <!-- Particles canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <div class="container-wide relative z-10 grid md:grid-cols-2 gap-8 items-center px-4">
+      <div data-aos="fade-right">
+        <h2 class="section-title">Bienvenido a la nube de Cinnamoroll</h2>
+        <p class="text-lg text-gray-700 mb-6">Un lugar pastel, tierno y lleno de movimiento donde descubrirás su historia, fotos y curiosidades. Hecho con amor y muchas orejas voladoras 🐶☁️</p>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="galeria.html" class="btn-primary">Ver Galería</a>
+          <a href="historia.html" class="btn-ghost">Leer Historia</a>
+        </div>
+
+        <div class="mt-8 grid grid-cols-2 gap-3 max-w-md">
+          <div class="card p-4 flex items-center gap-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center">💕</div>
+            <div>
+              <div class="text-sm font-semibold">Merch & Cafés</div>
+              <div class="text-xs text-gray-500">Cafés temáticos y peluches adorables</div>
+            </div>
+          </div>
+
+          <div class="card p-4 flex items-center gap-3" data-aos="zoom-in" data-aos-delay="200">
+            <div class="w-12 h-12 bg-lilac-100 rounded-xl flex items-center justify-center">✨</div>
+            <div>
+              <div class="text-sm font-semibold">Animaciones</div>
+              <div class="text-xs text-gray-500">Apariciones en cortos y arte</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center" data-aos="fade-left">
+        <img src="img/2.jpg" alt="Cinnamoroll" class="w-80 md:w-96 rounded-3xl shadow-2xl floaty" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section class="py-12">
+    <div class="container-wide px-4 grid md:grid-cols-3 gap-6">
+      <div class="card" data-aos="fade-up">
+        <h3 class="text-xl font-semibold mb-2">🍰 Dulzura</h3>
+        <p class="text-gray-600">Diseños suaves, colores pastel y mucha ternura.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="120">
+        <h3 class="text-xl font-semibold mb-2">✈️ Vuelo mágico</h3>
+        <p class="text-gray-600">Sus orejas lo llevan a lugares asombrosos.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="240">
+        <h3 class="text-xl font-semibold mb-2">🎨 Comunidad</h3>
+        <p class="text-gray-600">Fans creativos en todo el mundo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-12">
+    <div class="container-wide px-4 grid md:grid-cols-2 gap-6 items-center">
+      <div data-aos="fade-right">
+        <h3 class="text-2xl font-semibold mb-2">¿Tienes arte o una foto?</h3>
+        <p class="text-gray-600 mb-4">Compártelo en la sección de contacto — ¡me encantaría verlo!</p>
+        <a href="contacto.html" class="btn-primary">Contáctame</a>
+      </div>
+
+      <div class="card flex items-center justify-center" data-aos="fade-left">
+        <img src="img/3.jpg" alt="mini" class="w-64 rounded-xl shadow-md" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-12 py-8 bg-gradient-to-r from-sky-200 to-pink-200">
+    <div class="container-wide px-4 text-center">
+      <img src="img/6.jpg" alt="deco" class="mx-auto w-28 h-20 object-cover rounded-lg footer-deco mb-4"/>
+      <p class="text-gray-700">© 2025 • Fan Page de Cinnamoroll — hecho con ♥ por Melina</p>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div id="toast" class="toast">Mensaje enviado ✔</div>
+
+  <!-- Libraries -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    /* Init AOS */
+    AOS.init({duration:900, once:true, easing:'ease-out-cubic'});
+
+    /* Simple particle background (canvas) */
+    (() => {
+      const canvas = document.getElementById('particles-canvas');
+      if(!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let W = canvas.width = innerWidth;
+      let H = canvas.height = innerHeight;
+      window.addEventListener('resize', ()=>{ W = canvas.width = innerWidth; H = canvas.height = innerHeight; });
+
+      const particles = [];
+      const colors = ['#fff', '#fff9', '#ffe4f0', '#f0f8ff'];
+      for(let i=0;i<60;i++){
+        particles.push({
+          x: Math.random()*W,
+          y: Math.random()*H,
+          r: 1 + Math.random()*3,
+          vx: (Math.random()-0.5)*0.2,
+          vy: -0.2 - Math.random()*0.6,
+          alpha: 0.25 + Math.random()*0.6,
+          c: colors[Math.floor(Math.random()*colors.length)]
+        });
+      }
+
+      function draw(){
+        ctx.clearRect(0,0,W,H);
+        for(const p of particles){
+          ctx.globalAlpha = p.alpha;
+          ctx.fillStyle = p.c;
+          ctx.beginPath();
+          ctx.ellipse(p.x, p.y, p.r*3, p.r*1.6, 0, 0, Math.PI*2);
+          ctx.fill();
+
+          p.x += p.vx;
+          p.y += p.vy;
+          if(p.y < -20){ p.y = H + 40; p.x = Math.random()*W; }
+          if(p.x < -40) p.x = W+40;
+          if(p.x > W+40) p.x = -40;
+        }
+        requestAnimationFrame(draw);
+      }
+      draw();
+    })();
+  </script>
+</body>
+</html>

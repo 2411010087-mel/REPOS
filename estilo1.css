@@ -17,7 +17,7 @@ body {
 /* ====== ENCABEZADO ====== */
 header {
     background: linear-gradient(to right, #af40cd, #46cee9);
-    color: white;
+    color: rgba(145, 211, 249, 0.9);
     padding: 20px 0;
     text-align: center;
     border-radius: 0 0 10px 10px;
@@ -34,6 +34,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap; /* Para que los links bajen si no entran */
 }
 
 nav a {
@@ -77,4 +78,49 @@ footer {
     text-align: center;
     padding: 20px;
     border-radius: 10px 10px 0 0;
+}
+
+/* ====== MEDIA QUERIES ====== */
+
+/* Tablets (pantallas medianas) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    section {
+        padding: 15px;
+    }
+}
+
+/* Celulares (pantallas pequeñas) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    header h1 {
+        font-size: 1.4rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        display: block;
+        padding: 8px 0;
+    }
+    section {
+        margin: 20px auto;
+        padding: 10px;
+    }
+    article {
+        padding: 10px;
+    }
+    footer {
+        font-size: 0.9rem;
+    }
 }

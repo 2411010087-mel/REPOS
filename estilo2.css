@@ -124,3 +124,45 @@ footer a {
   color: #0ff; 
   text-decoration: none; 
 }
+
+/* ====== MEDIA QUERIES ====== */
+
+/* Tablets */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  main {
+    padding: 1.5rem;
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  nav a {
+    display: block;
+    text-align: center;
+    padding: 0.8rem;
+  }
+  main {
+    padding: 1rem;
+  }
+  article {
+    padding: 0.8rem;
+  }
+  footer {
+    font-size: 0.9rem;
+  }
+}

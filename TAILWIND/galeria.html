@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cinnamoroll • Galería</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-b from-sky-50 via-white to-pink-50 text-gray-800">
+
+  <header class="site-header">
+    <div class="container-wide flex items-center justify-between py-4 px-4">
+      <div class="flex items-center gap-3"><img src="img/2.jpg" class="w-10 h-10 rounded-md" /><h1 class="text-white font-[Fredoka One]">Galería</h1></div>
+      <nav class="flex items-center gap-6">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="historia.html" class="nav-link">Historia</a>
+        <a href="galeria.html" class="nav-link">Galería</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="py-12">
+    <div class="container-wide px-4">
+      <h2 class="section-title" data-aos="fade-up">Galería</h2>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper mb-8" data-aos="zoom-in">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/3.jpg" alt="" class="gallery-img" /></div>
+          <div class="swiper-slide"><img src="img/4.jpg" alt="" class="gallery-img" /></div>
+          <div class="swiper-slide"><img src="img/5.jpg" alt="" class="gallery-img" /></div>
+          <div class="swiper-slide"><img src="img/6.jpg" alt="" class="gallery-img" /></div>
+        </div>
+        <!-- pagination and navigation -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <!-- Grid -->
+      <div class="grid md:grid-cols-4 gap-4">
+        <img src="img/3.jpg" class="gallery-img" data-aos="fade-up" />
+        <img src="img/7.jpg" class="gallery-img" data-aos="fade-up" data-aos-delay="80" />
+        <img src="img/5.jpg" class="gallery-img" data-aos="fade-up" data-aos-delay="160" />
+        <img src="img/6.jpg" class="gallery-img" data-aos="fade-up" data-aos-delay="240" />
+        <img src="img/4.jpg" class="gallery-img" data-aos="fade-up" data-aos-delay="320" />
+        <img src="img/10.jpg" class="gallery-img" data-aos="fade-up" data-aos-delay="400" />
+        <img src="img/9.jpg" class="gallery-img" data-aos="fade-up" data-aos-delay="480" />
+        <img src="img/8.jpg" class="gallery-img" data-aos="fade-up" data-aos-delay="560" />
+
+      </div>
+
+      <div class="mt-8 text-center">
+        <a href="contacto.html" class="btn-primary" data-aos="zoom-in">¿Tienes más fotos? Envíalas</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-8 bg-gradient-to-r from-sky-200 to-pink-200">
+    <div class="container-wide text-center px-4"><p class="text-gray-700">© 2025 Fan Page de Cinnamoroll</p></div>
+  </footer>
+
+  <!-- Libs -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script>
+    AOS.init({duration:800, once:true});
+    const swiper = new Swiper('.mySwiper', {
+      loop:true, centeredSlides:true, autoplay:{delay:2500, disableOnInteraction:false},
+      slidesPerView:1.18, spaceBetween:18, pagination:{el:'.swiper-pagination', clickable:true},
+      navigation:{ nextEl:'.swiper-button-next', prevEl:'.swiper-button-prev'},
+      breakpoints:{
+        768:{slidesPerView:2.2},
+        1024:{slidesPerView:2.6}
+      }
+    });
+  </script>
+</body>
+</html>
